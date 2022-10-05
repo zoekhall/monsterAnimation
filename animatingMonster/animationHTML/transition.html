@@ -1,0 +1,69 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Transitions</title>
+  <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+  <link rel="stylesheet" href="/styles.css" media="screen">
+  <style>
+    #SCM:hover {
+      transform: scale(2, 2);
+    }
+
+    #RM:hover {
+      transform: rotate(150deg);
+    }
+
+    #TM:hover {
+      transform: translate(-200px, -200px);
+    }
+
+    #SKM:hover {
+      transform: skew(30deg, 30deg);
+      transition-duration: 2s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Transitions</h1>
+  <div id="monsters">
+    <figure id="rotateMonst">
+      <img id="RM" src="/media/frank.png">
+      <figcaption>Rotating Monster</figcaption>
+    </figure>
+    <figure id="scaleMonst">
+      <img id="SCM" src="/media/frank.png">
+      <figcaption>Scale Monster</figcaption>
+    </figure>
+    <figure id="skewMonst">
+      <img id="SKM" src="/media/frank.png">
+      <figcaption>Skew Monster<br><em style="font-size: smaller;">Using Duration</em></br></figcaption>
+    </figure>
+    <figure id="translateMonst">
+      <img id="TM" src="/media/frank.png">
+      <figcaption>Translate Monster</figcaption>
+    </figure>
+  </div>
+
+    <audio id="thunder" src="/media/thunder2.wav" loop autoplay controls></audio>
+    <audio id="aliveness" src="/media/Its alive.mp3" controls></audio>
+</body>
+
+<script>
+  const thunder = document.getElementById("thunder"); 
+  thunder.volume = 0.04;
+  const aliveness = document.getElementById("aliveness");
+  aliveness.volume = 0.2;
+
+  const playAlive = function(){
+    aliveness.play();
+  }
+
+  setTimeout(playAlive, 3000); 
+
+</script>
+
+</html>

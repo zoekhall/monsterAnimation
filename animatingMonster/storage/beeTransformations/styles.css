@@ -1,0 +1,63 @@
+body {
+  background-image: url(https://img.rawpixel.com/private/static/images/website/2022-05/frpoppies_red_field_poppy-image-kybcxqfz.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=b49fa6e7118d7de77a0edf455cd58c7d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+/* #bees {
+
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "rb sb tb";
+} */
+
+
+
+
+figure {
+  float: left;
+  width: 0%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  position: fixed;
+  margin-top: 15%;
+}
+
+figcaption {
+  color: white;
+  background-color: rgb(17, 21, 86);
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bee {
+  width: 200px;
+  margin-left: -50px;
+  margin-bottom: 20px;
+}
+
+#rotateBee {
+  margin-left: 5%;
+  grid-area: rB;
+}
+
+#translateBee {
+  margin-left: 81%;
+  grid-area: tB;
+}
+
+#scaleBee {
+  margin-left: 30%;
+}
+
+#skewBee {
+  margin-left: 56%;
+}
